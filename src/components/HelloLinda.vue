@@ -8,7 +8,7 @@
         <li>
             <p><img :src="userdata.profile" class="profile picture" /></p>
             <p>User ID: {{ userdata.id }}</p>
-            <p>Name: {{ userdata.firstname }}  {{ userdata.lastname }}</p>
+            <p>Name: {{ userdata.firstname }} {{ userdata.lastname }}</p>
             <p>City: {{ userdata.city }}</p>
             <p>Country: {{ userdata.country }}</p>
         </li>
