@@ -4,8 +4,8 @@
       <div class="container">
         <img src="@/assets/strava_logo.png" />
         <ul class="nav">
-          <li><router-link to="/">Home</router-link></li>
-          <li><router-link to="/Linda">Linda</router-link></li>
+          <router-link tag="li" to="/"><a>Home</a></router-link>
+          <router-link tag="li" to="/Linda"><a>Linda</a></router-link>
         </ul>
       </div>
     </header>
@@ -50,18 +50,18 @@ header {
   & li {
     float:left;
     & a {
-      background:#cde;
-      padding:15px;
-      border-left:3px solid #def;
-      text-decoration:none;
-      &.router-link-exact-active {
-        background:#678;
-        color:#fff;
-      }
+        background:#cde;
+        padding:15px;
+        border-left:3px solid #def;
+        text-decoration:none;
     }
     &:first-child a {
       border:0;
     }
+    &.nav__item-active a {
+        background:#678;
+        color:#fff;
+    } 
   }
 }
 footer {

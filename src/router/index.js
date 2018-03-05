@@ -17,5 +17,7 @@ export default new Router({
       name: 'HelloLinda',
       component: HelloLinda
     }
-  ]
+  ],
+  linkActiveClass:"nav__item",
+  linkExactActiveClass:"nav__item-active"
 })
